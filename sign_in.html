@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .text-center{
+            text-align:center;
+        }
+        .login__form-header{
+            font-size: 22px;
+            margin-bottom: 24px;
+            margin-top: 16px;
+        }
+        .card{
+            display: block;
+            position: relative;
+            margin: 0 auto 10px auto;
+            margin-bottom: 10px;
+            padding: 16px;
+            box-sizing: border-box;
+            background: white;
+            box-shadow: 0 0 0 1px rgba(200, 215, 225, 0.5), 0 1px 2px #e9eff3;
+        }
+        .User_data label{
+            color: #2e4453;
+            display: block;
+            font-size: 14px;
+            line-height: 1.5;
+            font-weight: 500 !important;
+            margin-bottom: 5px;
+
+        }
+        .User_data input{
+            margin-bottom: 20px;
+            transition: none;
+            min-height: 35px;
+            min-width: 315px;
+        }
+        .login__form-terms{
+            font-size: 11px;
+        }
+        .login-action button{
+            background-color: #00aadc;
+        }
+        .login__form-social-divide{
+            margin-bottom: 9px;
+            margin-top: 12px;
+            position: relative;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .wp-login__links a{
+            display: block;
+            min-width: 310px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            color: #2e4453;
+            text-decoration: none;
+            font-size: 13px;
+            word-spacing: 2px;
+        }
+        .wp-login__links a :hover{
+            color:yellow;
+        }
+    </style>
+    <script>
+        var object = {
+            a: "hello",
+            b:function(){
+                console.log(a.text);
+            }
+        };
+    </script>
+</head>
+<body style="background-color:#F3F6F8;color: #2e4453">
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li  class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <div class="login__form-header text-center">Log in to your account.</div>
+            <form class="form-signin">
+                <div class="card Login_input">
+                    <div class="User_data">
+                        <label for="usernameOrEmail" class="login__form-userdata-username">Email Address or Username</label>
+                        <input autocapitalize="off" class="form-text-input login__form-userdata-username-input" id="usernameOrEmail" name="usernameOrEmail" value=""  type="text">
+                        <label for="password" class="login__form-userdata-username" data-reactid="31">Password</label>
+                        <div class="form-password-input">
+                            <input autocapitalize="off" autocomplete="off" class="form-text-input login__form-userdata-username-password" id="password" name="password" value="" data-reactid="33" type="password">
+
+
+
+                        <p class="login__form-terms text-center" data-reactid="38">
+                            By continuing with any of the options below, you agree to our
+                            <a href="//wordpress.com/tos/" target="_blank" rel="noopener noreferrer" data-reactid="40">
+                                Terms of Service</a></p>
+
+                        <div class="login_action">
+                            <button class="btn btn-lg btn-primary btn-block" style="background-color: #00aadc;border-width: 1px 1px 2px;max-height: 40px;line-height: 1  " type="submit">
+                                Log in</button>
+                        </div>
+                        <div class="login__form-social-divide"><span>Or</span></div>
+
+                        <div class="login_action">
+                            <button class="btn btn-lg btn-primary btn-block" style="background-color: white;border-width: 1px 1px 2px;max-height: 40px;line-height: 1;border-color: lightgrey;color:lightgrey " type="submit">
+                                Continue with Google</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="wp-login__links">
+                    <a href="#">Email me a login link</a><hr style="color: darkgrey;">
+                    <a href="https://wordpress.com/wp-login.php?action=lostpassword" rel="external">Lost your password?</a><hr>
+                    <a href="https://wordpress.com" rel="external"><svg class="gridicon gridicons-arrow-left needs-offset-y" height="18" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+                    </g></svg>Back to WordPress.com</a><hr>
+                </div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+<footer style="min-height: 50px;background-color: white"></footer>
+
+
+</body>
+</html>
